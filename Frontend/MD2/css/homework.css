@@ -1,0 +1,353 @@
+﻿/*Info about the author 
+name:Emīls Lipšāns	
+student ID number:el20054
+*/
+@font-face {
+	font-family:'Roboto';
+	src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);    
+}
+
+body{
+  width: 100%;
+  min-width:1500px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.parent-menu{
+  list-style-type: none;
+  background-color: rgb(14, 2, 35);
+  opacity: 80%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%; 
+  font-size: 120%;
+  
+}
+.sub-menu{
+  line-height:2;
+  padding-left:10px;
+}
+
+.upper-menu {
+  line-height: 75px;
+  float: left;
+  margin-left: 20px;
+}
+.right{  
+  float: right; 
+  margin-right: 30px; 
+}
+.parent-menu li a{
+  color:white;
+  text-decoration: none; 
+}
+.parent-menu li :hover {
+  color: rgb(242, 177, 26);
+}
+.parent-menu li .btn:hover {
+  color:white;
+  opacity: 100%;
+}
+.parent-menu .btn {
+  background-color:rgb(242, 213, 26);
+  opacity: 80%;
+  border:  1px solid  white;
+  border-radius: 34px;
+  padding: 5px 10px 5px 10px;
+}
+.sub-menu-caption.upper-menu.active{
+  color:rgb(242, 177, 26);
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: rgb(14, 2, 35);
+  min-width: 120px;
+  z-index: 1;
+  font-size: 90%;
+}
+.sub-menu-caption.upper-menu.active:hover .sub-menu {
+  display: block;
+  cursor: initial;
+}
+.expand {
+  display: inline-block;
+}
+.collapse {
+  display: none;
+}
+.sub-menu-caption:hover .collapse{
+  display: inline-block;
+}
+
+.sub-menu-caption:hover .expand{
+  display: none;
+}
+
+.header{
+  height: 100vh;
+  background-image: url("../images/topimage.jpeg");
+  background-size: cover;
+}
+.header .bg-overlay {
+  height: 100vh;
+  background-color: rgb(14, 2, 35, 0.5);
+}
+
+h1{
+  font-size: 72px;
+  color:white;
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  margin-right:50px;
+  margin-bottom:100px; 
+}
+.meta li{
+  color:white;
+  display: inline-flex;
+  height: 48px;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 24px;
+  margin-left:25px;
+  padding-right: 15px;   
+}
+.meta span{ 
+  background-color:rgb(242, 213, 26);
+  opacity: 80%;
+  width: 50px;
+  height: 50px;
+  border-radius: 24px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px; 
+}
+.meta{
+  position:absolute;                  
+  bottom:20px;                          
+  right:50px;
+}
+.social {
+  float: right;
+  margin-top: 110px;
+  margin-right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social h5{
+  color:white;
+  opacity: 80%;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  padding-right: 15px;
+}
+.social-btns{
+  display: inline-block;   
+}
+.social-btns img {
+  width: 20px;
+  height: auto;
+  opacity: 60%; 
+}
+.social-btns img:hover {
+  opacity: 100%;    
+}
+.section-summary{
+  padding:50px;
+}
+.section-summary h2{
+  color:black;
+  font-size: 42px;
+  text-align:center;
+  font-weight: bold;
+  padding:25px;
+  text-transform:uppercase;
+}
+.section-summary p{
+  color:rgb(132,132,132);
+  font-size: 18px;
+  line-height:200%;
+  padding:25px;
+}
+.add span{
+  font-style: italic;
+}
+.section-cast{
+  height: 100vh;
+  min-height: 680px;
+  background-image: url("../images/car.jpg");
+  background-size: cover;
+  text-align:center;
+}
+.section-cast .bg-overlay{
+  height: 100vh;
+  background-color: rgba(14,2,35,0.8);   
+}
+.section-cast a {
+  text-decoration: none;
+}
+.section-cast li {
+  margin-right: 40px;
+  margin-left: 40px;
+  position: relative;
+}
+.line { 
+  width: 30px;
+  height: 40px;
+  margin-bottom:10px;
+  padding-top:30px;
+  border-bottom: 2px solid white;
+  display: inline-block; 
+}
+.section-cast h4 {
+  color: white;
+  font-size: 24px;
+  padding-bottom: 150px;
+  font-weight: bold;
+  text-transform:uppercase;
+}
+.section-cast img {
+  height: 50vh;
+}
+.section-cast ul {
+  display: flex;
+  position: relative;
+  padding: 60px;
+  justify-content: space-between;
+
+}
+.cast-head{
+  background-color: rgba(242,213,26,0.8);
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top:0;
+  left: 0;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding:7px;
+}
+.cast-text {
+  background-color: rgb(255, 255, 255, 0.8);
+  bottom:2px;
+  width: 100%;
+  height: 15%;
+  text-transform: uppercase;
+  position: absolute;
+  text-align: center;
+}
+.cast-text h5 {
+  margin: 15px ;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-weight: bold;
+  color: rgb(42,42,42); 
+}
+.cast-text p{
+  color: rgb(132, 132, 132);
+  font-size: 14px;
+}
+.section-cast li:hover .cast-text h5 {
+  color: white;
+}
+.section-cast li:hover .cast-text  {
+  background-color: rgb(242, 213, 26, 1);
+}
+.section-trailer {
+  height: 100vh;
+  min-height: 950px;
+  text-align: center; 
+}
+.section-trailer .upper{
+  font-size: 42px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: -2px;
+  padding:60px;
+}
+.section-trailer a {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+.section-trailer li ul li:last-of-type {
+  margin-top:130px;
+}
+.section-trailer iframe{
+  padding-top:30px;
+  padding-left:120px;
+  float:left;
+  height: 720px;
+  width: 1280px;
+}
+.section-trailer li {
+  padding-bottom:30px;
+  padding-right:120px;
+}
+
+.section-tickets{
+  background-image: url(../images/cinema.png);
+  background-size: cover;
+  text-align: center;
+  max-height:340px;
+}
+.section-tickets .bg-overlay {
+  background-color: rgb(14, 2, 35, 0.5);
+  padding-bottom: 150px;
+}
+.section-tickets h4{
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom:58px;
+}
+.section-tickets .btn {
+  background-color:rgb(242, 213, 26, 0.8);
+  opacity: 80%;
+  border:  1px solid  white;
+  color: white;
+  border-radius: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 15px 10px 15px;
+}
+.section-tickets .btn:hover {
+  background-color:rgb(242, 213, 26, 1);
+}
+.section-footer{
+  text-align: center;
+}
+.section-footer a{
+  font-size: inherit;
+  color: rgb(136,136,136);
+  text-decoration: none;
+  font-variant-caps: small-caps;
+}
+.ul-footer{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.ul-footer li {
+  display: inline-block;
+  border-right: 1px solid rgb(181, 181, 181);
+  padding: 7px 7px 7px 7px;
+}
+.ul-footer li:last-of-type {
+  border: none;
+}
+.ul-footer a:hover {
+  color: rgb(14, 2, 35);
+  text-decoration: underline;
+}
