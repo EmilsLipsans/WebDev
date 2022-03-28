@@ -1,0 +1,239 @@
+
+.parent-menu{
+  list-style-type: none;
+  background-color: rgba(199, 199, 199, 0.8);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%; 
+  font-size: 160%;
+}
+.upper-menu {
+  line-height: 75px;
+  float: left;
+  margin-left: 20px;
+}
+.right{  
+  float: right; 
+  margin-right: 1%;
+  font-size: 80% ;
+}
+.parent-menu li a{
+  color:white;
+  text-decoration: none; 
+}
+.parent-menu li :hover {
+  text-decoration: underline;
+}
+.header{
+  height: 100vh;
+  background-image: url("../images/Main.jpeg");
+  background-size: cover;
+}
+h1{
+  font-size: 40px;
+  color:white;
+  padding:30px;
+}
+.container-header{
+  position: absolute;
+  max-width:500px;
+  bottom:5%;
+  right:5%;
+  border-radius:60%; 
+  z-index: 1;
+  background: rgba(46, 42, 42, 0.8);
+}
+.text-center{
+  color:black;
+  font-size: 38px;
+  text-align:center;
+  font-weight: bold;
+  text-transform:uppercase;
+  padding-bottom: 5%;
+  padding-top: 2%;
+}
+.container-box{
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin:auto;
+  top:20%;
+}
+.Text-box{
+  background-color: rgba(199, 199, 199, 0.3);
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
+}
+.Text-box p{
+  text-align: center;
+  font-size: 24px;
+  line-height:200%;
+  padding:25px;
+}
+.section-main, #section-contact {
+  height: 100vh;
+  background-color: rgba(199, 199, 199, 0.4);
+  position: relative;
+}
+.line { 
+  width: 100%;
+  height: 40px;  
+  position: absolute;
+  border-bottom: 2px solid rgb(190, 155, 191, 0.3);
+  display: inline-block; 
+  bottom:0;
+}
+.gallery a img{
+  display: inline;
+  margin-left: 10vh;
+  margin-right: 5vh;
+  width:25%;
+  height:auto;
+  padding:5px;
+  filter: grayscale(100%);
+  transition:1s;
+}
+.gallery img:hover{
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+
+/* Contact Form */
+.form-group {
+  margin-bottom: 20px;
+}
+#section-contact label {
+  display: block;
+  margin-bottom: 5px;
+  text-align:center;
+  font-size:24px;
+}
+#section-contact input,
+#section-contact textarea {
+  width: 70%;
+  padding: 10px;
+  border: 1px #ddd solid;
+  margin-left:15%;
+}
+#section-contacttextarea {
+  height: 200px;
+}
+#section-contact input:focus, 
+#section-contact textarea:focus {
+  outline: none;
+  border-color: #f7c08a;
+}
+.btn {
+  display:block;
+  margin:auto;
+  margin-bottom:10px;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #f7c08a;
+  color: #333;
+}
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px;
+}
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+.box {
+  float: left;
+  width: 33.3%;
+  padding-top:10px;
+  text-align:center;
+}
+.box p {
+  margin: 10px 0;
+}
+.box i {
+  margin-bottom: 10px;
+}
+#map{
+  position: relative;
+  width:100%;
+  height:80vh;
+  background-color: rgba(199, 199, 199, 0.4);
+}
+#map iframe{
+  display: block;
+  margin:auto;
+  margin-bottom:10%;
+  width:1000px;
+  height:500px; 
+  border:0;
+}
+#arrow{
+  height:45px;
+  position: relative;
+  display:block;
+  margin:auto;
+  cursor: pointer;
+}
+#moreText{
+  display: none;
+}
+@media all and (max-width: 500px){
+  .upper-menu {
+    line-height: 30px;
+    text-align:center;
+    display:block;
+  }
+  .parent-menu li a{
+    color:white;
+    text-decoration: none;
+    display:block;
+  }
+  .section-main{
+    height:auto;
+  }
+  .header{
+    background-image: url("../images/IE.jpeg");
+    background-size: cover;
+  }
+  h1{
+    font-size: 20px;
+  }
+  .container-box{
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+  .Text-box p{
+    font-size: 24px;
+    line-height:100%;
+  }
+  .gallery a img{
+    display: block;
+    margin: auto;
+    width:50%;
+    padding:10px;
+  } 
+  #map{
+    height:60vh;
+  }
+  #map iframe{
+    width:80%;
+  } 
+}
+
+
+
+
+
