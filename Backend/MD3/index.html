@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+Emīls Lipšāns el20054
+-->
+<html>
+    <head>
+        <title>COVID-19 Statistics</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="covid_data.js"></script>
+        <script type="text/javascript" src="homework3.js"></script>
+        <style>
+            table, td, th { border: 1px solid gray; border-collapse: collapse;}
+            td:nth-child(5), td:nth-child(6), td:nth-child(7) {text-align: right;}
+        </style>
+    </head>
+    <body>
+        <h1>COVID-19 Statistics</h1>
+        <div>
+          <div>
+            <label for="continent-select">Continent:</label>
+            <select id="continent-select" onchange="">
+				<option value="">All</option>
+			</select>
+          </div>
+          <div>
+            <label for="country-select">Country:</label>
+            <select id="country-select" onchange="">
+              <option value="">All</option>
+            </select>      
+          </div>
+          <div>
+            <label for="date-from">Date from:</label>      
+            <input type="text" id="date-from" placeholder="YYYY-MM-DD">
+          </div>    
+          <div>
+            <label for="date-until">Date until:</label>      
+            <input type="text" id="date-until" placeholder="YYYY-MM-DD">
+          </div>        
+          <div>
+            <label for="search">Country search:</label>      
+            <input type="search" id="search">
+          </div>
+          <div id="buttons">
+            <button id="show-list">Show list</button>
+          </div>
+            <table>
+            <!--EXAMPLE START-->
+            <!--This is an example result. The example should be removed in the final homework solution. -->
+           
+            <div id="myDynamicTable"></div>      
+            <!--EXAMPLE END-->
+          </table>
+        </div>
+    </body>
+</html>
